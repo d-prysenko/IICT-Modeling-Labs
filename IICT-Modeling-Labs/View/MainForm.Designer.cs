@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.task1 = new System.Windows.Forms.Button();
+            this.task2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // task1
@@ -41,13 +42,24 @@
             this.task1.UseVisualStyleBackColor = true;
             this.task1.Click += new System.EventHandler(this.task1_Click);
             // 
-            // Form1
+            // task2
+            // 
+            this.task2.Location = new System.Drawing.Point(272, 125);
+            this.task2.Name = "task2";
+            this.task2.Size = new System.Drawing.Size(232, 37);
+            this.task2.TabIndex = 1;
+            this.task2.Text = "Р—Р°РґР°РЅРёРµ 2";
+            this.task2.UseVisualStyleBackColor = true;
+            this.task2.Click += new System.EventHandler(this.task2_Click);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 535);
+            this.Controls.Add(this.task2);
             this.Controls.Add(this.task1);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -56,5 +68,6 @@
         #endregion
 
         private Button task1;
+        private Button task2;
     }
 }
