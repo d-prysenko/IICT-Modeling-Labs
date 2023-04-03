@@ -26,5 +26,11 @@ namespace IICT_Modeling_Labs
             Form form = new Task3Form();
             form.ShowDialog();
         }
+
+        private void task4_Click(object sender, EventArgs e)
+        {
+            Form form = new Task4Form();
+            form.ShowDialog();
+        }
     }
 }

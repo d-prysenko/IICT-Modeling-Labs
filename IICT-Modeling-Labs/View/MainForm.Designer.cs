@@ -31,6 +31,7 @@
             this.task1 = new System.Windows.Forms.Button();
             this.task2 = new System.Windows.Forms.Button();
             this.task3 = new System.Windows.Forms.Button();
+            this.task4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // task1
@@ -63,11 +64,22 @@
             this.task3.UseVisualStyleBackColor = true;
             this.task3.Click += new System.EventHandler(this.task3_Click);
             // 
+            // task4
+            // 
+            this.task4.Location = new System.Drawing.Point(272, 274);
+            this.task4.Name = "task4";
+            this.task4.Size = new System.Drawing.Size(232, 37);
+            this.task4.TabIndex = 3;
+            this.task4.Text = "Р—Р°РґР°РЅРёРµ 4";
+            this.task4.UseVisualStyleBackColor = true;
+            this.task4.Click += new System.EventHandler(this.task4_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 535);
+            this.Controls.Add(this.task4);
             this.Controls.Add(this.task3);
             this.Controls.Add(this.task2);
             this.Controls.Add(this.task1);
@@ -82,5 +94,6 @@
         private Button task1;
         private Button task2;
         private Button task3;
+        private Button task4;
     }
 }
