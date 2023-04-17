@@ -30,10 +30,9 @@ namespace IICT_Modeling_Labs
         {
             for (int i = 0; i < doubles.Length; i++)
             {
-                Label text = new Label();
-                text.Text = doubles[i].ToString("F2");
+                string val = doubles[i].ToString("F2");
 
-                tableOfNumbers.Controls.Add(text, i, row);
+                tableOfNumbers.FillCell(i, row, val);
             }
         }
     }

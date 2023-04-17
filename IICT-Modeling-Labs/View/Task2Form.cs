@@ -1,13 +1,4 @@
 п»їusing IICT_Modeling_Labs.Service;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace IICT_Modeling_Labs.View
 {
@@ -33,10 +24,7 @@ namespace IICT_Modeling_Labs.View
         {
             for (int i = 0; i < tableOfNumbers.ColumnCount; i++)
             {
-                Label text = new Label();
-                text.Text = i.ToString();
-
-                tableOfNumbers.Controls.Add(text, i, 0);
+                tableOfNumbers.FillCell(i, 0, i.ToString());
             }
         }
 
@@ -44,15 +32,13 @@ namespace IICT_Modeling_Labs.View
         {
             for (int i = 0; i < doubles.Length; i++)
             {
-                Label text = new Label();
-                text.Text = doubles[i].ToString("F2");
+                string val = doubles[i].ToString("F2");
 
-                tableOfNumbers.Controls.Add(text, i, 1);
+                tableOfNumbers.FillCell(i, 1, val);
 
-                Label res = new Label();
-                res.Text = EventModel(doubles[i]) ? "+" : "-";
+                string res = EventModel(doubles[i]) ? "+" : "-";
 
-                tableOfNumbers.Controls.Add(res, i, 2);
+                tableOfNumbers.FillCell(i, 2, res);
             }
         }
 

@@ -1,20 +1,11 @@
 п»їusing IICT_Modeling_Labs.Service;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace IICT_Modeling_Labs.View
 {
     public partial class Task3Form : Form
     {
-        private const int SAMPLES_COUNT = 6;
+        private const int ARRAYS_COUNT = 6;
+        private const int SAMPLES_COUNT = 10;
 
         public Task3Form()
         {
@@ -25,143 +16,69 @@ namespace IICT_Modeling_Labs.View
         {
             RandomGeneratorManager randomGenerator = new RandomGeneratorManager();
 
-            double[][] samples = new double[SAMPLES_COUNT][];
+            double[][] samples = new double[ARRAYS_COUNT][];
 
-            for (int i = 0; i < SAMPLES_COUNT; i++)
+            for (int i = 0; i < ARRAYS_COUNT; i++)
             {
-                samples[i] = randomGenerator.GetDoublesRange(0, 1, 10);
+                samples[i] = randomGenerator.GetDoublesRange(0, 1, SAMPLES_COUNT);
             }
 
-            double[] mean = ArrayMean(samples);
+            double[] mean = MathStat.ArrayMean(samples);
 
-            double[] dispersion = ArrayDispersion(samples, mean);
+            double[] dispersion = MathStat.ArrayDispersion(samples, mean);
 
-            double[] r = ArrayR(samples);
+            double[] r = ArrayEventProbability(samples);
 
             SetupTableHeader();
 
-            for (int i = 0; i < SAMPLES_COUNT;i++)
+            for (int i = 0; i < ARRAYS_COUNT;i++)
             {
                 int row = i + 1;
 
                 FillTableRow(row, samples[i]);
-                FillCell(10, row, mean[i]);
-                FillCell(11, row, dispersion[i]);
-                FillCell(12, row, r[i]);
+                tableOfNumbers.FillCell(SAMPLES_COUNT, row, mean[i]);
+                tableOfNumbers.FillCell(SAMPLES_COUNT + 1, row, dispersion[i]);
+                tableOfNumbers.FillCell(SAMPLES_COUNT + 2, row, r[i]);
             }
         }
+
         private void SetupTableHeader()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < SAMPLES_COUNT; i++)
             {
-                FillCell(i, 0, i + 1);
+                tableOfNumbers.FillCell(i, 0, i + 1);
             }
 
-            FillCell(10, 0, "m");
-            FillCell(11, 0, "D");
-            FillCell(12, 0, "R");
-        }
-
-        private void FillCell(int col, int row, double val)
-        {
-            FillCell(col, row, val.ToString("F2"));
-        }
-
-        private void FillCell(int col, int row, int val)
-        {
-            FillCell(col, row, val.ToString());
-        }
-
-        private void FillCell(int col, int row, string val)
-        {
-            Label text = new Label();
-            text.Text = val;
-
-            tableOfNumbers.Controls.Add(text, col, row);
+            tableOfNumbers.FillCell(SAMPLES_COUNT, 0, "m");
+            tableOfNumbers.FillCell(SAMPLES_COUNT + 1, 0, "D");
+            tableOfNumbers.FillCell(SAMPLES_COUNT + 2, 0, "R");
         }
 
         private void FillTableRow(int row, double[] doubles)
         {
             for (int i = 0; i < doubles.Length; i++)
             {
-                Label text = new Label();
-                text.Text = doubles[i].ToString("F2");
+                string text = doubles[i].ToString("F2");
 
                 if (A(doubles[i], row - 1))
                 {
-                    text.Text += "*";
+                    text += "*";
                 }
 
-                tableOfNumbers.Controls.Add(text, i, row);
+                tableOfNumbers.FillCell(i, row, text);
             }
         }
 
-        private static double[] ArrayMean(double[][] numbers)
+        public static double[] ArrayEventProbability(double[][] numbers)
         {
             double[] res = new double[numbers.Length];
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                res[i] = Mean(numbers[i]);
+                res[i] = MathStat.EventProbability(numbers[i], (double x) => A(x, i));
             }
 
             return res;
-        }
-
-        private static double Mean(double[] numbers)
-        {
-            return numbers.Average();
-        }
-
-        private static double[] ArrayDispersion(double[][] numbers, double[] mean)
-        {
-            double[] res = new double[numbers.Length];
-
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                res[i] = Dispersion(numbers[i], mean[i]);
-            }
-
-            return res;
-        }
-
-        private static double Dispersion(double[] numbers, double mean)
-        {
-            double res = 0;
-
-            foreach (double n in numbers)
-            {
-                res += (n - mean) * (n - mean);
-            }
-
-            return res / numbers.Length;
-        }
-
-        private static double[] ArrayR(double[][] numbers)
-        {
-            double[] res = new double[numbers.Length];
-
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                res[i] = R(numbers[i], i);
-            }
-
-            return res;
-        }
-
-        private static double R(double[] numbers, int i)
-        {
-            int mi = 0;
-
-            foreach (double n in numbers)
-            {
-                if (A(n, i))
-                {
-                    mi++;
-                }
-            }
-
-            return (double) mi / 10.0;
         }
 
         private static bool A(double x, int i)

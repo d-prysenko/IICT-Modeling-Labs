@@ -1,4 +1,6 @@
-п»їnamespace IICT_Modeling_Labs.View
+п»їusing IICT_Modeling_Labs.Components;
+
+namespace IICT_Modeling_Labs.View
 {
     partial class Task2Form
     {
@@ -30,7 +32,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Task2Form));
             this.label1 = new System.Windows.Forms.Label();
-            this.tableOfNumbers = new System.Windows.Forms.TableLayoutPanel();
+            this.tableOfNumbers = new Table();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -118,7 +120,7 @@
         #endregion
 
         private Label label1;
-        private TableLayoutPanel tableOfNumbers;
+        private Table tableOfNumbers;
         private Label label2;
         private Label label3;
     }

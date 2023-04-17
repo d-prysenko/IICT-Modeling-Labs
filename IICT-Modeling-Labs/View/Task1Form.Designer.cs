@@ -1,4 +1,6 @@
-п»їnamespace IICT_Modeling_Labs
+п»їusing IICT_Modeling_Labs.Components;
+
+namespace IICT_Modeling_Labs
 {
     partial class Task1Form
     {
@@ -29,7 +31,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Task1Form));
-            this.tableOfNumbers = new System.Windows.Forms.TableLayoutPanel();
+            this.tableOfNumbers = new Table();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -225,7 +227,7 @@
 
         #endregion
 
-        private TableLayoutPanel tableOfNumbers;
+        private Table tableOfNumbers;
         private Label label1;
         private Label label2;
         private Label label3;
