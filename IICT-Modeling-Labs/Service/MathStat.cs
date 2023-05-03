@@ -43,6 +43,17 @@
             return res / numbers.Length;
         }
 
+        public static double VariationCoefficient(double[] numbers)
+        {
+            double mean = Mean(numbers);
+            return VariationCoefficient(numbers, mean, Dispersion(numbers, mean));
+        }
+
+        public static double VariationCoefficient(double[] numbers, double mean, double dispersion)
+        {
+            return Math.Sqrt(dispersion) / mean;
+        }
+
         public static double EventProbability(double[] numbers, Func<double, bool> eventModel)
         {
             int mi = 0;
