@@ -32,6 +32,8 @@
             this.task2 = new System.Windows.Forms.Button();
             this.task3 = new System.Windows.Forms.Button();
             this.task4 = new System.Windows.Forms.Button();
+            this.task5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // task1
@@ -74,18 +76,41 @@
             this.task4.UseVisualStyleBackColor = true;
             this.task4.Click += new System.EventHandler(this.task4_Click);
             // 
+            // task5
+            // 
+            this.task5.Location = new System.Drawing.Point(272, 346);
+            this.task5.Name = "task5";
+            this.task5.Size = new System.Drawing.Size(232, 37);
+            this.task5.TabIndex = 4;
+            this.task5.Text = "Р—Р°РґР°РЅРёРµ 5";
+            this.task5.UseVisualStyleBackColor = true;
+            this.task5.Click += new System.EventHandler(this.task5_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ в„–1";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 535);
+            this.ClientSize = new System.Drawing.Size(783, 453);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.task5);
             this.Controls.Add(this.task4);
             this.Controls.Add(this.task3);
             this.Controls.Add(this.task2);
             this.Controls.Add(this.task1);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ в„–1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,5 +120,7 @@
         private Button task2;
         private Button task3;
         private Button task4;
+        private Button task5;
+        private Label label1;
     }
 }
