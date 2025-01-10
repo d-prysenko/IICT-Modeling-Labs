@@ -1,4 +1,4 @@
-п»їusing System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +19,7 @@ namespace IICT_Modeling_Labs.Components
 
         public void FillCell(int col, int row, double val)
         {
-            FillCell(col, row, val.ToString("F2"));
+            FillCell(col, row, val.ToString("F3"));
         }
 
         public void FillCell(int col, int row, int val)
