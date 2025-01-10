@@ -19,10 +19,11 @@ namespace IICT_Modeling_Labs
 
             double[] noise = randomGenerator.GetDoublesRange(INTERVAL_BEGIN, INTERVAL_END, SAMPLES_COUNT);
 
-            const double initial_a = 2;
-            const double initial_b = 5;
+            const double initial_a = 4.5;
+            const double initial_b = 2.5;
+            const double initial_gamma = 7;
 
-            LinearFunction y = new LinearFunction(initial_a, initial_b);
+            ExponentialFunction y = new ExponentialFunction(initial_a, initial_gamma, initial_b);
 
             double deltaX = 1.0 / SAMPLES_COUNT;
 
@@ -43,7 +44,15 @@ namespace IICT_Modeling_Labs
                 tableOfNumbers.FillCell(3, i + 1, y.call(current_x_coord));
             }
 
-            LinearFunction approximated_y = linearApproximation(x_coords, y_coords, SAMPLES_COUNT);
+            double[] ln_y_coords = new double[SAMPLES_COUNT];
+
+            for (int i = 0; i < SAMPLES_COUNT; i++)
+            {
+                ln_y_coords[i] = Math.Log(y_coords[i]);
+            }
+
+            LinearFunction approximated_y_ln = linearApproximation(x_coords, ln_y_coords, SAMPLES_COUNT);
+            ExponentialFunction approximated_y = new ExponentialFunction(approximated_y_ln.a, Math.Pow(Math.E, approximated_y_ln.b));
 
             a.Text = String.Format("a = {0:f3}", approximated_y.a);
             b.Text = String.Format("b = {0:f3}", approximated_y.b);

@@ -76,9 +76,9 @@
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(33, 9);
             label6.Name = "label6";
-            label6.Size = new Size(384, 85);
+            label6.Size = new Size(313, 85);
             label6.TabIndex = 9;
-            label6.Text = "Лабораторная №4\r\n\r\nВычислительный эксперимент. \r\nИдентификация модели, линейной относительно параметров, \r\nметодом наименьших квадратов ";
+            label6.Text = "Лабораторная №4\r\n\r\nВычислительный эксперимент.\r\nИдентификация МНК нелинейных моделей.\r\nТрансцендентные модели экспоненциального типа";
             // 
             // a
             // 

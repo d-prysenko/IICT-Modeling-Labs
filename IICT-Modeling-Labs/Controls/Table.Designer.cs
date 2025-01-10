@@ -1,4 +1,4 @@
-п»їnamespace IICT_Modeling_Labs.Components
+﻿namespace IICT_Modeling_Labs.Components
 {
     partial class Table
     {
