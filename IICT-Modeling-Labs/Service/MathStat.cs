@@ -1,4 +1,4 @@
-п»їnamespace IICT_Modeling_Labs.Service
+namespace IICT_Modeling_Labs.Service
 {
     internal class MathStat
     {

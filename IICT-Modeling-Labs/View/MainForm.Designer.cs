@@ -28,93 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableOfNumbers = new IICT_Modeling_Labs.Components.Table();
-            this.formsPlot1 = new ScottPlot.FormsPlot();
-            this.label6 = new System.Windows.Forms.Label();
-            this.a = new System.Windows.Forms.Label();
-            this.b = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            tableOfNumbers = new Components.Table();
+            formsPlot1 = new ScottPlot.FormsPlot();
+            label6 = new Label();
+            a = new Label();
+            b = new Label();
+            SuspendLayout();
             // 
             // tableOfNumbers
             // 
-            this.tableOfNumbers.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableOfNumbers.ColumnCount = 5;
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableOfNumbers.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tableOfNumbers.Location = new System.Drawing.Point(33, 97);
-            this.tableOfNumbers.Name = "tableOfNumbers";
-            this.tableOfNumbers.RowCount = 11;
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableOfNumbers.Size = new System.Drawing.Size(832, 263);
-            this.tableOfNumbers.TabIndex = 2;
+            tableOfNumbers.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tableOfNumbers.ColumnCount = 5;
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableOfNumbers.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            tableOfNumbers.Location = new Point(33, 97);
+            tableOfNumbers.Name = "tableOfNumbers";
+            tableOfNumbers.RowCount = 11;
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableOfNumbers.Size = new Size(832, 263);
+            tableOfNumbers.TabIndex = 2;
             // 
             // formsPlot1
             // 
-            this.formsPlot1.Location = new System.Drawing.Point(108, 366);
-            this.formsPlot1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.formsPlot1.Name = "formsPlot1";
-            this.formsPlot1.Size = new System.Drawing.Size(776, 353);
-            this.formsPlot1.TabIndex = 3;
+            formsPlot1.Location = new Point(108, 366);
+            formsPlot1.Margin = new Padding(4, 3, 4, 3);
+            formsPlot1.Name = "formsPlot1";
+            formsPlot1.Size = new Size(776, 353);
+            formsPlot1.TabIndex = 3;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(12, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(384, 85);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Лабораторная №4\r\n\r\nВычислительный эксперимент. \r\nИдентификация модели, линейной о" +
-    "тносительно параметров, \r\nметодом наименьших квадратов ";
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(33, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(384, 85);
+            label6.TabIndex = 9;
+            label6.Text = "Лабораторная №4\r\n\r\nВычислительный эксперимент. \r\nИдентификация модели, линейной относительно параметров, \r\nметодом наименьших квадратов ";
             // 
             // a
             // 
-            this.a.AutoSize = true;
-            this.a.Location = new System.Drawing.Point(33, 391);
-            this.a.Name = "a";
-            this.a.Size = new System.Drawing.Size(27, 15);
-            this.a.TabIndex = 10;
-            this.a.Text = "a = ";
+            a.AutoSize = true;
+            a.Location = new Point(33, 391);
+            a.Name = "a";
+            a.Size = new Size(27, 15);
+            a.TabIndex = 10;
+            a.Text = "a = ";
             // 
             // b
             // 
-            this.b.AutoSize = true;
-            this.b.Location = new System.Drawing.Point(33, 422);
-            this.b.Name = "b";
-            this.b.Size = new System.Drawing.Size(28, 15);
-            this.b.TabIndex = 11;
-            this.b.Text = "b = ";
+            b.AutoSize = true;
+            b.Location = new Point(33, 422);
+            b.Name = "b";
+            b.Size = new Size(28, 15);
+            b.TabIndex = 11;
+            b.Text = "b = ";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 721);
-            this.Controls.Add(this.b);
-            this.Controls.Add(this.a);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.formsPlot1);
-            this.Controls.Add(this.tableOfNumbers);
-            this.Name = "MainForm";
-            this.Text = "Лабораторная №2";
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(906, 721);
+            Controls.Add(b);
+            Controls.Add(a);
+            Controls.Add(label6);
+            Controls.Add(formsPlot1);
+            Controls.Add(tableOfNumbers);
+            Name = "MainForm";
+            Text = "Лабораторная №4";
+            Load += MainForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
