@@ -28,7 +28,7 @@ namespace IICT_Modeling_Labs
             for (int i = 0; i < 10; i++)
             {
                 double begin = INTERVAL_BEGIN + (INTERVAL_END - INTERVAL_BEGIN) * i / 10.0;
-                double end = INTERVAL_BEGIN + (INTERVAL_END - INTERVAL_BEGIN) * (i+1) / 10.0;
+                double end = INTERVAL_BEGIN + (INTERVAL_END - INTERVAL_BEGIN) * (i + 1) / 10.0;
                 double middle = (end + begin) / 2.0;
 
                 x[i] = middle;

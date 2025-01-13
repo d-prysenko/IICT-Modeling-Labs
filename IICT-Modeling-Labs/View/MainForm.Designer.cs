@@ -29,176 +29,175 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.tableOfNumbers = new IICT_Modeling_Labs.Components.Table();
-            this.formsPlot1 = new ScottPlot.FormsPlot();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.mxLabel = new System.Windows.Forms.Label();
-            this.dxLabel = new System.Windows.Forms.Label();
-            this.yxLabel = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            tableOfNumbers = new Components.Table();
+            formsPlot1 = new ScottPlot.FormsPlot();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            mxLabel = new Label();
+            dxLabel = new Label();
+            yxLabel = new Label();
+            SuspendLayout();
             // 
             // tableOfNumbers
             // 
-            this.tableOfNumbers.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableOfNumbers.ColumnCount = 10;
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tableOfNumbers.Location = new System.Drawing.Point(107, 157);
-            this.tableOfNumbers.Name = "tableOfNumbers";
-            this.tableOfNumbers.RowCount = 5;
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.3F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.3F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.4F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableOfNumbers.Size = new System.Drawing.Size(758, 113);
-            this.tableOfNumbers.TabIndex = 2;
+            tableOfNumbers.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tableOfNumbers.ColumnCount = 10;
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            tableOfNumbers.Location = new Point(107, 157);
+            tableOfNumbers.Name = "tableOfNumbers";
+            tableOfNumbers.RowCount = 5;
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Percent, 33.4F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableOfNumbers.Size = new Size(758, 113);
+            tableOfNumbers.TabIndex = 2;
             // 
             // formsPlot1
             // 
-            this.formsPlot1.Location = new System.Drawing.Point(79, 272);
-            this.formsPlot1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.formsPlot1.Name = "formsPlot1";
-            this.formsPlot1.Size = new System.Drawing.Size(776, 353);
-            this.formsPlot1.TabIndex = 3;
+            formsPlot1.Location = new Point(79, 272);
+            formsPlot1.Margin = new Padding(4, 3, 4, 3);
+            formsPlot1.Name = "formsPlot1";
+            formsPlot1.Size = new Size(776, 353);
+            formsPlot1.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(79, 157);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Xi";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(79, 157);
+            label1.Name = "label1";
+            label1.Size = new Size(19, 17);
+            label1.TabIndex = 4;
+            label1.Text = "Xi";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(7, 182);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "РљРѕР»-РІРѕ С‡РёСЃРµР»";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(7, 182);
+            label2.Name = "label2";
+            label2.Size = new Size(91, 17);
+            label2.TabIndex = 5;
+            label2.Text = "РљРѕР»-РІРѕ С‡РёСЃРµР»";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(12, 203);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Р’РµСЂРѕСЏС‚РЅРѕСЃС‚СЊ";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(12, 203);
+            label3.Name = "label3";
+            label3.Size = new Size(87, 17);
+            label3.TabIndex = 6;
+            label3.Text = "Р’РµСЂРѕСЏС‚РЅРѕСЃС‚СЊ";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(28, 222);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 24);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "РЎСѓРјРјР°\r\nРІРµСЂРѕСЏС‚РЅРѕСЃС‚РµР№";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 7F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(28, 222);
+            label4.Name = "label4";
+            label4.Size = new Size(69, 24);
+            label4.TabIndex = 7;
+            label4.Text = "РЎСѓРјРјР°\r\nРІРµСЂРѕСЏС‚РЅРѕСЃС‚РµР№";
+            label4.TextAlign = ContentAlignment.TopRight;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(29, 250);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Р—РЅР°С‡. F(xi)";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(29, 250);
+            label5.Name = "label5";
+            label5.Size = new Size(70, 17);
+            label5.TabIndex = 8;
+            label5.Text = "Р—РЅР°С‡. F(xi)";
+            label5.TextAlign = ContentAlignment.TopRight;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(12, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(863, 136);
-            this.label6.TabIndex = 9;
-            this.label6.Text = resources.GetString("label6.Text");
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(12, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(863, 136);
+            label6.TabIndex = 9;
+            label6.Text = resources.GetString("label6.Text");
             // 
             // mxLabel
             // 
-            this.mxLabel.AutoSize = true;
-            this.mxLabel.Location = new System.Drawing.Point(12, 610);
-            this.mxLabel.Name = "mxLabel";
-            this.mxLabel.Size = new System.Drawing.Size(43, 15);
-            this.mxLabel.TabIndex = 10;
-            this.mxLabel.Text = "M[x] =";
+            mxLabel.AutoSize = true;
+            mxLabel.Location = new Point(12, 610);
+            mxLabel.Name = "mxLabel";
+            mxLabel.Size = new Size(43, 15);
+            mxLabel.TabIndex = 10;
+            mxLabel.Text = "M[x] =";
             // 
             // dxLabel
             // 
-            this.dxLabel.AutoSize = true;
-            this.dxLabel.Location = new System.Drawing.Point(12, 629);
-            this.dxLabel.Name = "dxLabel";
-            this.dxLabel.Size = new System.Drawing.Size(40, 15);
-            this.dxLabel.TabIndex = 11;
-            this.dxLabel.Text = "D[x] =";
+            dxLabel.AutoSize = true;
+            dxLabel.Location = new Point(12, 629);
+            dxLabel.Name = "dxLabel";
+            dxLabel.Size = new Size(40, 15);
+            dxLabel.TabIndex = 11;
+            dxLabel.Text = "D[x] =";
             // 
             // yxLabel
             // 
-            this.yxLabel.AutoSize = true;
-            this.yxLabel.Location = new System.Drawing.Point(14, 647);
-            this.yxLabel.Name = "yxLabel";
-            this.yxLabel.Size = new System.Drawing.Size(38, 15);
-            this.yxLabel.TabIndex = 12;
-            this.yxLabel.Text = "Оі[x] =";
+            yxLabel.AutoSize = true;
+            yxLabel.Location = new Point(14, 647);
+            yxLabel.Name = "yxLabel";
+            yxLabel.Size = new Size(38, 15);
+            yxLabel.TabIndex = 12;
+            yxLabel.Text = "Оі[x] =";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 678);
-            this.Controls.Add(this.yxLabel);
-            this.Controls.Add(this.dxLabel);
-            this.Controls.Add(this.mxLabel);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.formsPlot1);
-            this.Controls.Add(this.tableOfNumbers);
-            this.Name = "MainForm";
-            this.Text = "Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ в„–2";
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(906, 678);
+            Controls.Add(yxLabel);
+            Controls.Add(dxLabel);
+            Controls.Add(mxLabel);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(formsPlot1);
+            Controls.Add(tableOfNumbers);
+            Name = "MainForm";
+            Text = "Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ в„–2";
+            Load += MainForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
